@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Checkout</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+.checkout-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  display: flex;
+  gap: 20px;
+}
+
+.checkout-form,
+.order-summary {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkout-form textarea {
+  resize: none;
+  height: 80px;
+}
+
+.checkout-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.place-order {
+  width: 100%;
+  padding: 12px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Order summary */
+.product {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.product img {
+  width: 80px;
+  border-radius: 5px;
+}
+
+.discount {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.discount input {
+  flex: 1;
+  padding: 8px;
+}
+
+.discount button {
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.total {
+  margin-top: 15px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+</style>
+
+
+</head>
+<body>
+
+<div class="checkout-container">
+
+  <!-- LEFT FORM -->
+  <div class="checkout-form">
+    <h2>Billing Details</h2>
+
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="tel" placeholder="Phone Number" required>
+    <textarea placeholder="Shipping Address"></textarea>
+
+    <h3>Payment Method</h3>
+
+    <label><input type="radio" name="payment" checked> Cash on Delivery</label>
+    <label><input type="radio" name="payment"> Visa / MasterCard</label>
+    <label><input type="radio" name="payment"> JazzCash / EasyPaisa</label>
+
+    <button class="place-order">Place Order</button>
+  </div>
+
+  <!-- RIGHT SUMMARY -->
+  <div class="order-summary">
+    <h2>Order Summary</h2>
+
+    <div class="product">
+      <img src="DSC01827.webp" alt="Product">
+      <div>
+        <p>Premium Product</p>
+        <strong id="price">$100</strong>
+      </div>
+    </div>
+
+    <div class="discount">
+      <input type="text" id="discountCode" placeholder="Discount Code">
+      <button onclick="applyDiscount()">Apply</button>
+    </div>
+
+    <div class="total">
+      <p>Total:</p>
+      <strong id="totalPrice">$100</strong>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+	
+let originalPrice = 100;
+
+function applyDiscount() {
+  const code = document.getElementById("discountCode").value;
+  let total = originalPrice;
+
+  if (code === "SAVE10") {
+    total = originalPrice - 10;
+  } 
+  else if (code === "SAVE20") {
+    total = originalPrice - 20;
+  } 
+  else {
+    alert("Invalid Discount Code");
+  }
+
+  document.getElementById("totalPrice").innerText = "$" + total;
+}
+
+
+
+</script>
+</body>
+</html>
+

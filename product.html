@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Product Detail</title>
+
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    .container { max-width: 1200px; margin: auto; padding: 30px; display:flex; }
+
+    /* Flex layout */
+    .product-page { display: flex; gap: 40px; flex-wrap: wrap; }
+
+   .product-images{
+  flex: 1;
+}
+
+.main-img{
+  width: 100%;
+  max-width: 450px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.thumbs{
+  display: flex;
+  gap: 10px;
+}
+
+.thumbs img{
+  width: 80px;
+  height: 110px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.thumbs img:hover{
+  border: 1px solid black;
+}
+
+    /* Info */
+    .product-info { flex: 1; }
+    .product-info h1 { font-size: 28px; margin-bottom: 10px; }
+    .price { font-size: 24px; color: #000; margin-bottom: 15px; }
+
+    .size-options { display: flex; gap: 12px; margin-bottom: 18px; }
+    .size-option { border: 1px solid #000; padding: 8px 14px; cursor: pointer; }
+    .size-option:hover { background: #000; color: #fff; }
+
+    .qty-label { margin-top: 10px; margin-bottom: 10px; display: block; }
+    .qty { width: 70px; padding: 8px; margin-bottom: 18px; }
+
+    .add-to-cart { background: #000; color: #fff; padding: 14px 26px; border: none; cursor: pointer; font-size: 16px; }
+
+    .buynow { background: #000; color: #fff; padding: 14px 26px; border: none; cursor: pointer; font-size: 16px; }
+
+    /* Description */
+    .product-desc { margin-top: 25px; font-size: 15px; line-height: 1.5; }
+
+    @media(max-width: 768px) {
+      .product-page { flex-direction: column; }
+    }
+
+
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.btn-group {
+display: flex;
+flex-direction: column;
+gap: 15px; /* button ke beech space */
+}
+
+
+
+
+
+.cart-btn {
+  border: none;
+  outline: 0;
+  text-decoration: none;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 40%;
+  font-size: 18px;
+}
+
+.cart-btn:hover {
+  opacity: 0.7;
+}
+
+/*buybutton*/
+
+.main-btn  {
+ border: none ;
+ text-decoration: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 40%;
+  font-size: 18px;
+}
+
+.main-btn:hover {
+  opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </style>
+
+  <script>
+  function changeImage(el){
+    document.getElementById('mainImage').src = el.src;
+  }
+</script>
+
+
+</head>
+
+<body>
+
+<div class="container">
+<div class="product-images">
+
+  <!-- MAIN IMAGE -->
+  <img src="web suit.webp" id="mainImage" class="main-img">
+
+  <!-- THUMBNAILS -->
+  <div class="thumbs">
+    <img src="pexels-dhanno-19292728.jpg" onclick="changeImage(this)">
+    <img src="web suit.webp" onclick="changeImage(this)">
+    <img src="web suit.webp" onclick="changeImage(this)">
+  </div>
+
+</div>
+
+
+    <!-- PRODUCT INFORMATION -->
+    <div class="product-info">
+      <h1>Saiban</h1>
+      <p class="price">PKR 7,999</p>
+
+      <!-- Sizes -->
+      <div class="size-options">
+        <div class="size-option">XS</div>
+        <div class="size-option">S</div>
+        <div class="size-option">M</div>
+        <div class="size-option">L</div>
+        <div class="size-option">XL</div>
+      </div>
+
+      <!-- Quantity -->
+      <label class="qty-label">Quantity:</label>
+      <input type="number" class="qty" value="1" min="1">
+<br><br>
+      <!-- ADD TO CART -->
+      <!-- <div class="card"> -->
+  
+  <!-- <p><button>Add to Cart</button></p> -->
+  <div class="btn-group">
+  <a href="checkout.html" class="cart-btn">Add to Cart</a>
+  <a href="checkout.html" class="main-btn">Buy Now</a>
+</div>
+
+<!-- </div><br> -->
+      
+      <!-- DESCRIPTION -->
+      <div class="product-desc">
+        <h3>Product Details</h3>
+        <p>Stitched Three Piece (Delivery 8–10 working days)</p>
+
+        <p>Turn heads with our captivating grey ensemble. Featuring intricate embroidery on the neckline, front and sleeves, paired with embroidered farshi shalwar. The look is elevated with a gracefully embroidered contrast maroon shawl.
+</p>
+        <ul>
+          <li>Fabric: Marina Dhanak</li>
+          <li>Color: Beige</li>
+          <li>Embroidered neckline, sleeves & dupatta</li>
+        </ul>
+        <p>Note: Actual color may vary slightly due to lighting. </p>
+
+<p>Fabric: Marina Dhanak<br>
+Style: Farshi shalwar<br>
+Details: Embroided<br>
+Color: Same as shirt<br>
+Dupatta Details <br>
+
+Fabric: Marina Dhanak<br>
+Color: Maroon<br>
+Details: Embroided<br>
+ Size & Fit:
+
+Model height is 5'3"<br>
+Model is wearing Small size.<br></p>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>collection</title>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<style>
+
+/* HEADER */
+.header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 80px;
+  height:80px;
+}
+
+/* LOGO */
+.logo img{
+  height:80px;
+}
+
+/* NAV */
+.nav{
+  display:flex;
+  gap:25px;
+}
+
+.nav a{
+  text-decoration:none;
+  color:#000;
+  font-size:14px;
+  font-weight:600;
+}
+
+.nav a:hover{
+  color:#b8933f;
+}
+
+/* RIGHT SIDE */
+.header-right{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+/* CART BUTTON */
+.cart-btn{
+  width:40px;
+  height:40px;
+  border:1px solid #ccc;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.cart-btn:hover{
+  background:#000;
+}
+
+.cart-btn:hover i{
+  color:#fff;
+}
+
+.cart-btn i{
+  font-size:18px;
+}
+
+
+
+/* Currency Switcher */
+.currency-switcher {
+display: flex;
+align-items: center;
+gap: 8px;
+margin-bottom: 20px;
+}
+
+
+.currency-switcher select {
+padding: 5px 10px;
+border-radius: 5px;
+border: 1px solid #ccc;
+font-size: 16px;
+cursor: pointer;
+}
+
+
+/* Price display */
+.product {
+margin-bottom: 15px;
+}
+
+
+
+
+.product-name {
+font-weight: bold;
+font-size: 18px;
+}
+
+
+.product-price {
+font-size: 16px;
+color: #333;
+}
+
+
+/* Flag next to currency */
+.currency-flag {
+width: 24px;
+height: 16px;
+display: inline-block;
+vertical-align: middle;
+margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+.parent{
+ display: inline-flex;
+ gap: 1px;
+ align-items: center;
+ text-align: center;
+
+}
+
+
+
+.main{
+  width:320px;
+  height:500px;
+  border:8px solid black;
+  background:whitesmoke;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition:0.4s;
+}
+
+/* SHADOW ON HOVER */
+.main:hover{
+   margin-bottom: 110px;
+  transform: scale(1.05);
+  box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* IMAGE BOX */
+.shayan{
+  width:310px;
+  height:380px;
+  margin-bottom: 110px;
+  background-image:url("DSC01902.jpg");
+  background-size:cover;
+  background-position:center;
+  transition:0.4s;
+  cursor:pointer;
+}
+
+/* IMAGE CHANGE ON HOVER */
+.shayan:hover{
+  margin-bottom: 110px;
+  background-image:url("DSC01827.webp");
+  transform:scale(1.08);
+}
+
+
+.main1{
+  width:320px;
+  height:500px;
+  border:8px solid black;
+  background:whitesmoke;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition:0.4s;
+}
+
+/* SHADOW ON HOVER */
+.main1:hover{
+  transform: scale(1.05);
+  margin-bottom: 110px;
+  box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* IMAGE BOX */
+.shayan1{
+  width:310px;
+  height:380px;
+  margin-bottom: 110px;
+  background-image:url("DSC01902.jpg");
+  background-size:cover;
+  background-position:center;
+  transition:0.4s;
+  cursor:pointer;
+}
+
+/* IMAGE CHANGE ON HOVER */
+.shayan1:hover{
+  margin-bottom: 110px;
+  background-image:url("DSC01827.webp");
+  transform:scale(1.08);
+}
+
+
+.main2{
+  width:320px;
+  height:500px;
+  border:8px solid black;
+  background:whitesmoke;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition:0.4s;
+}
+
+/* SHADOW ON HOVER */
+.main2:hover{
+   margin-bottom: 110px;
+  transform: scale(1.05);
+  box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* IMAGE BOX */
+.shayan2{
+  width:310px;
+  height:380px;
+  margin-bottom: 110px;
+  background-image:url("DSC01902.jpg");
+  background-size:cover;
+  background-position:center;
+  transition:0.4s;
+  cursor:pointer;
+}
+
+/* IMAGE CHANGE ON HOVER */
+.shayan2:hover{
+  margin-bottom: 110px;
+  background-image:url("DSC01827.webp");
+  transform:scale(1.08);
+}
+
+
+.main3{
+  width:320px;
+  height:500px;
+  border:8px solid black;
+  background:whitesmoke;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition:0.4s;
+}
+
+/* SHADOW ON HOVER */
+.main3:hover{
+  margin-bottom: 110px;
+  transform: scale(1.05);
+  box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* IMAGE BOX */
+.shayan3{
+  width:310px;
+ height:380px;
+  margin-bottom: 110px;;
+  background-image:url("DSC01902.jpg");
+  background-size:cover;
+  background-position:center;
+  transition:0.4s;
+  cursor:pointer;
+}
+
+/* IMAGE CHANGE ON HOVER */
+.shayan3:hover{
+  margin-bottom: 110px;
+  background-image:url("DSC01827.webp");
+  transform:scale(1.08);
+}
+
+
+/*parent1 CSS*/
+
+.parent1{
+ display: inline-flex;
+ gap: 2px;
+ align-items: center;
+ text-align: center;
+
+}
+
+
+
+.first{
+  width:320px;
+  height:500px;
+  border:8px solid black;
+  background:whitesmoke;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition:0.4s;
+}
+
+/* SHADOW ON HOVER */
+.first:hover{
+  margin-bottom: 110px;
+  transform: scale(1.05);
+  box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* IMAGE BOX */
+.pic{
+  width:310px;
+  height:380px;
+  margin-bottom: 110px;
+  background-image:url("DSC01902.jpg");
+  background-size:cover;
+  background-position:center;
+  transition:0.4s;
+  cursor:pointer;
+}
+
+/* IMAGE CHANGE ON HOVER */
+.pic:hover{
+  margin-bottom: 110px;
+  background-image:url("DSC01827.webp");
+  transform:scale(1.08);
+}
+
+
+
+.first1{
+  width:320px;
+  height:500px;
+  border:8px solid black;
+  background:whitesmoke;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition:0.4s;
+}
+
+/* SHADOW ON HOVER */
+.first1:hover{
+   margin-bottom: 110px;
+  transform: scale(1.05);
+  box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* IMAGE BOX */
+.pic1{
+  width:310px;
+ height:380px;
+  margin-bottom: 110px;
+  background-image:url("DSC01902.jpg");
+  background-size:cover;
+  background-position:center;
+  transition:0.4s;
+  cursor:pointer;
+}
+
+/* IMAGE CHANGE ON HOVER */
+.pic1:hover{
+  margin-bottom: 110px;
+  background-image:url("DSC01827.webp");
+  transform:scale(1.08);
+}
+
+
+.first2{
+  width:320px;
+  height:500px;
+  border:8px solid black;
+  background:whitesmoke;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition:0.4s;
+}
+
+/* SHADOW ON HOVER */
+.first2:hover{
+  margin-bottom: 110px;
+  transform: scale(1.05);
+  box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* IMAGE BOX */
+.pic2{
+  width:310px;
+  height:380px;
+  margin-bottom: 110px;
+  background-image:url("DSC01902.jpg");
+  background-size:cover;
+  background-position:center;
+  transition:0.4s;
+  cursor:pointer;
+}
+
+/* IMAGE CHANGE ON HOVER */
+.pic2:hover{
+  margin-bottom: 110px;
+  background-image:url("DSC01827.webp");
+  transform:scale(1.08);
+}
+
+
+.first3{
+  width:320px;
+  height:500px;
+  border:8px solid black;
+  background:whitesmoke;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition:0.4s;
+}
+
+/* SHADOW ON HOVER */
+.first3:hover{
+  margin-bottom: 110px;
+  transform: scale(1.05);
+  box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* IMAGE BOX */
+.pic3{
+  width:310px;
+ height:380px;
+  margin-bottom: 110px;
+  background-image:url("DSC01902.jpg");
+  background-size:cover;
+  background-position:center;
+  transition:0.4s;
+  cursor:pointer;
+}
+
+/* IMAGE CHANGE ON HOVER */
+.pic3:hover{
+  margin-bottom: 110px;
+  background-image:url("DSC01827.webp");
+  transform:scale(1.08);
+}
+
+
+
+
+
+/*parent2 CSS*/
+
+.parent2{
+ display: inline-flex;
+ gap: 1px;
+ align-items: center;
+ text-align: center;
+
+}
+
+
+
+.second{
+  width:320px;
+  height:500px;
+  border:8px solid black;
+  background:whitesmoke;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition:0.4s;
+}
+
+/* SHADOW ON HOVER */
+.second:hover{
+  margin-bottom: 110px;
+  transform: scale(1.05);
+  box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* IMAGE BOX */
+.ture{
+  width:310px;
+  height:380px;
+  margin-bottom: 110px;
+  background-image:url("DSC01902.jpg");
+  background-size:cover;
+  background-position:center;
+  transition:0.4s;
+  cursor:pointer;
+}
+
+/* IMAGE CHANGE ON HOVER */
+.ture:hover{
+  margin-bottom: 110px;
+  background-image:url("DSC01827.webp");
+  transform:scale(1.08);
+}
+
+
+
+.second1{
+  width:320px;
+  height:500px;
+  border:8px solid black;
+  background:whitesmoke;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition:0.4s;
+}
+
+/* SHADOW ON HOVER */
+.second1:hover{
+  margin-bottom: 110px;
+  transform: scale(1.05);
+  box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* IMAGE BOX */
+.ture1{
+  width:310px;
+ height:380px;
+  margin-bottom: 110px;
+  background-image:url("DSC01902.jpg");
+  background-size:cover;
+  background-position:center;
+  transition:0.4s;
+  cursor:pointer;
+}
+
+/* IMAGE CHANGE ON HOVER */
+.ture1:hover{
+  margin-bottom: 110px;
+  background-image:url("DSC01827.webp");
+  transform:scale(1.08);
+}
+
+
+.second2{
+  width:320px;
+  height:500px;
+  border:8px solid black;
+  background:whitesmoke;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition:0.4s;
+}
+
+/* SHADOW ON HOVER */
+.second2:hover{
+  margin-bottom: 110px;
+  transform: scale(1.05);
+  box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* IMAGE BOX */
+.ture2{
+  width:310px;
+  height:380px;
+  margin-bottom: 110px;
+  background-image:url("DSC01902.jpg");
+  background-size:cover;
+  background-position:center;
+  transition:0.4s;
+  cursor:pointer;
+}
+
+/* IMAGE CHANGE ON HOVER */
+.ture2:hover{
+  margin-bottom: 110px;
+  background-image:url("DSC01827.webp");
+  transform:scale(1.08);
+}
+
+
+.second3{
+  width:320px;
+  height:500px;
+  border:8px solid black;
+  background:whitesmoke;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition:0.4s;
+}
+
+/* SHADOW ON HOVER */
+.second3:hover{
+  margin-bottom: 110px;
+  transform: scale(1.05);
+  box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* IMAGE BOX */
+.true3{
+  width:310px;
+  height:380px;
+  margin-bottom: 110px;
+  background-image:url("DSC01902.jpg");
+  background-size:cover;
+  background-position:center;
+  transition:0.4s;
+  cursor:pointer;
+}
+
+/* IMAGE CHANGE ON HOVER */
+.ture3:hover{
+ transition:0.4s;
+  margin-bottom: 110px;
+  background-image:url("DSC01827.webp");
+  transform:scale(1.08);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TEXT */
+.title{
+  margin:12px 0 5px;
+  font-size:20px;
+}
+
+.price{
+  font-size:18px;
+  font-weight:bold;
+  margin-bottom:12px;
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  padding:10px 22px;
+  background:#C9A24D;
+  color:#000;
+  text-decoration:none;
+  font-weight:600;
+  border-radius:25px;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:beige;
+}
+
+
+
+
+
+.price{
+  align-items: center;
+  justify-content: center;
+  font-weight:bold;
+  margin:10px 0;
+}
+
+.btn{
+  display:inline-block;
+  padding:8px 20px;
+  background:#C9A24D;
+  text-decoration:none;
+  color:#000;
+  font-weight:bold;
+}
+
+
+
+
+
+/* FOOTER */
+.footer{
+  background:#eee;
+  padding:30px;
+  text-align:center;
+}
+
+.footer{
+  background:#f8f8f8;
+  padding:40px 20px 20px 20px;
+  color:#333;
+  font-size:14px;
+}
+
+.footer-container{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:20px;
+  max-width:1200px;
+  margin:auto;
+}
+
+.footer-column{
+  flex:1;
+  min-width:200px;
+}
+
+.footer-column h3{
+  margin-bottom:15px;
+  font-size:16px;
+  font-weight:bold;
+  color:#0B0F14;
+}
+
+.footer-column ul{
+  list-style:none;
+  padding:0;
+}
+
+.footer-column ul li{
+  margin-bottom:8px;
+}
+
+.footer-column ul li a{
+  color:#333;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.footer-column ul li a:hover{
+  color:#C9A24D;
+}
+
+.footer-bottom{
+  text-align:center;
+  margin-top:30px;
+  font-size:13px;
+  color:#555;
+}
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+ 
+
+<div class="header">
+  <div class="logo">
+    <img src="download.png">
+  </div>
+
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="Collection.html">Collection</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="header-right">
+    <div class="cart-btn">
+      <i class="fa-solid fa-bag-shopping"></i>
+    </div>
+
+ </div>
+<!-- Currency Switcher -->
+<div class="currency-switcher">
+<label for="currency">Currency:</label>
+<select id="currency">
+<option value="USD" data-symbol="$" data-flag="🇺🇸">USD</option>
+<option value="PKR" data-symbol="₨" data-flag="🇵🇰">PKR</option>
+<option value="EUR" data-symbol="€" data-flag="🇪🇺">EUR</option>
+<option value="GBP" data-symbol="£" data-flag="🇬🇧">GBP</option>
+</select>
+<span id="flag-display">🇺🇸</span>
+</div>
+</div>
+
+
+<div class="parent">
+<div class="main">
+  <div class="shayan">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h3>SAIBAN</h3>
+    <p class="price" data-usd="120">USD 120</p>
+    <a href="product.html" class="btn">Shop Now</a>
+  </div>
+
+ </div><!--main close here  -->
+<div class="main1">
+  <div class="shayan1">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <h3>SAIBAN</h3>
+    <p class="price" data-usd="120">USD 120</p>
+    <a href="product.html" class="btn">Shop Now</a>
+  </div>
+</div><!--main1 close here  -->
+<div class="main2">
+  <div class="shayan2">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h3>SAIBAN</h3>
+    <p class="price" data-usd="120">USD 120</p>
+    <a href="product.html" class="btn">Shop Now</a>
+  </div>
+</div><!--main2 close here  -->
+
+<div class="main3">
+  <div class="shayan3">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h3>SAIBAN</h3>
+    <p class="price" data-usd="120">USD 120</p>
+    <a href="product.html" class="btn">Shop Now</a>
+  </div>
+</div><!--main3 close here  -->
+
+
+</div><!--parent close here  -->
+<br>  <br><br>
+<!-- paren1 start here -->
+<div class="parent1">
+<div class="first">
+  <div class="pic">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h3>SAIBAN</h3>
+    <p class="price" data-usd="120">USD 120</p>
+    <a href="product.html" class="btn">Shop Now</a>
+  </div>
+ </div><!--pic close here  -->
+<div class="first1">
+  <div class="pic1">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h3>SAIBAN</h3>
+    <p class="price" data-usd="120">USD 120</p>
+    <a href="product.html" class="btn">Shop Now</a>
+  </div>
+</div><!--pic2 close here  -->
+<div class="first2">
+  <div class="pic2">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h3>SAIBAN</h3>
+    <p class="price" data-usd="120">USD 120</p>
+    <a href="product.html" class="btn">Shop Now</a>
+  </div>
+</div><!--pic2 close here  -->
+
+<div class="first3">
+  <div class="pic3">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h3>SAIBAN</h3>
+    <p class="price" data-usd="120">USD 120</p>
+    <a href="#" class="btn">Shop Now</a>
+  </div>
+</div><!--pic3 close here  -->
+
+
+</div><!--parent1 close here  -->
+
+
+
+<br>  <br><br>
+<!-- parent2 start here -->
+<div class="parent2">
+
+<div class="second">
+  <div class="ture">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h3>SAIBAN</h3>
+    <p class="price" data-usd="120">USD 120</p>
+    <a href="product.html" class="btn">Shop Now</a>
+  </div>
+ </div><!--ture close here  -->
+<div class="second1">
+  <div class="ture1">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h3>SAIBAN</h3>
+    <p class="price" data-usd="120">USD 120</p>
+    <a href="product.html" class="btn">Shop Now</a>
+  </div>
+</div><!--ture1 close here  -->
+<div class="second2">
+  <div class="ture2">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h3>SAIBAN</h3>
+    <p class="price" data-usd="120">USD 120</p>
+    <a href="product.html" class="btn">Shop Now</a>
+  </div>
+</div><!--ture2 close here  -->
+
+<div class="second3">
+ 
+<div class="true3">
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <h3>NEW ARRIVAL</h3>
+      <p class="price" data-usd="150">USD 150</p>
+      <a href="product.html" class="btn">Shop Now</a>
+    </div>
+
+</div>
+</div><!--parent2 close here -->
+
+
+<br><br><br><br>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-container">
+    
+    <!-- About Our Shop -->
+    <div class="footer-column">
+      <h3>About Our Shop</h3>
+      <p>
+        We create designer-inspired clothing crafted with premium fabrics,
+        precise tailoring, and modern elegance. Our collections deliver a refined, luxury look while ensuring comfort and timeless style.
+      </p>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <p>📞 +92 300 1234567</p>
+      <p>✉️ info@example.com</p>
+      <p>🌐 www.example.com</p>
+    </div>
+
+    <!-- Policies -->
+    <div class="footer-column">
+      <h3>Policies</h3>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="return.html">Return Policy</a></li>
+        <li><a href="shipping.html">Shipping Policy</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 YourShop. All rights reserved.</p>
+  </div>
+</div>
+
+
+<!-- js -->
+
+
+<script>
+// const select = document.getElementById("currency");
+// const flag = document.getElementById("flag");
+
+// select.addEventListener("change", function(){
+//   const selected = this.options[this.selectedIndex];
+//   flag.textContent = selected.dataset.flag;
+// });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const rates = {
+    USD: 1,
+    PKR: 280,
+    EUR: 0.93,
+    GBP: 0.81
+  };
+
+  const currency = document.getElementById("currency");
+  const prices = document.querySelectorAll(".price");
+
+  function updatePrices() {
+    const selected = currency.value;
+    const symbol = currency.options[currency.selectedIndex].dataset.symbol;
+
+    prices.forEach(price => {
+      const usdPrice = price.getAttribute("data-usd");
+      const converted = (usdPrice * rates[selected]).toFixed(2);
+      price.innerText = symbol + converted;
+    });
+  }
+
+  currency.addEventListener("change", updatePrices);
+
+  // page load pe default currency apply ho
+  updatePrices();
+
+});
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+<!-- 
+<div class="product-card">
+  <div class="img-box">
+    <img 
+      src="web suit.webp"
+      data-img1="web suit.webp"
+      data-img2="DSC01827.webp"
+      onclick="changeImg(DSC01827.webp)"
+    >
+  </div>
+
+  <h3 class="title">SAIBAN</h3>
+  <p class="price">$120</p>
+  <a href="product.html" class="btn">Shop Now</a>
+</div>
+
+ -->
